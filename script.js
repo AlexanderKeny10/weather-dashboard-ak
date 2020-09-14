@@ -1,14 +1,53 @@
-// Search for a city with current and future conditions for that city
+// Global variable 
+var cityList = [];
+var cityName;
 
-// added to the search history
+// local storage functions
+storedCityList();
+storedWeather();
 
-// View current weather conditions for that city
+// Displays the city entered by the user.
+function renderCities(){
+    $("#cityList").empty();
+    $("#cityInput").val("");
+    
+    for (i=0; i<cityList.length; i++){
+        var a = $("<a>");
+        a.addClass("list-group-item list-group-item-action list-group-item-primary city");
+        a.attr("data-name", cityList[i]);
+        a.text(cityList[i]);
+        $("#cityList").prepend(a);
+    } 
+}
 
-// The city name, the date, an icon representation of weather conditions, 
+// Pulls the city lists from local storage
+function storedCityList() {
+    var storedCities = JSON.parse(localStorage.getItem("cities"));
+    
+    if (storedCities !== null) {
+        cityList = storedCities;
+    }
+    
+    renderCities();
+    }
 
-// The temperature, the humidity, the wind speed, and the UV index
+// Searches added to local storage and display searches. 
+function storedWeather() {
+    var storedWeather = JSON.parse(localStorage.getItem("currentCity"));
 
-// The UV index shows the color that indicates whether the conditions are favorable, moderate, or severe
+    if (storedWeather !== null) {
+        cityName = storedWeather;
 
-// The 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity.
+        displayWeather();
+        displayFiveDayForecast();
+    }
+}
+// Saves the city array to local storage
+function storeCityArray() {
+    localStorage.setItem("cities", JSON.stringify(cityList));
+    }
+// Saves the currently display city to local storage
+function storeCurrentCity() {
 
+    localStorage.setItem("currentCity", JSON.stringify(cityName));
+}
