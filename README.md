@@ -9,3 +9,6 @@ SO THAT I can plan a trip accordingly
 ## Web Link
 Visit deplyed project at:
 
+![](images/WeatherDash1.png)
+
+![](images/WeatherDash2.png)
