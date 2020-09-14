@@ -1,4 +1,4 @@
-# weather-dashboard-ak
+# Weather-Dashboard-AK
 
 ## User Story
 

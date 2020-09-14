@@ -1,58 +1,61 @@
-span{
-    margin-top: -2rem;
-    font-size: 4rem;
-    font-weight: 600;
-  }
-  
-  
-  h3, h4, h5{
-  padding-top: 15px;
-  font-weight: 500;
-  }
-  
-  .jumbotron{
-    background-color: black;
-    color: rgb(255, 255, 255);
-    height: 6rem;
-    margin-bottom: 0px;
-  }
-  
-  .low{
-    border-radius: 6px;
-    background-color: green;
-    padding: 5px;
-    color: white;
-  }
-  
-  .moderate{
-    border-radius: 6px;
-    background-color: yellow;
-    padding: 5px;
-    color: black;
-  }
-  
-  .high{
-    border-radius: 6px;
-    background-color: orange;
-    padding: 5px;
-    color: black;
-  }
-  
-  .vhigh{
-    border-radius: 6px;
-    background-color: red;
-    padding: 5px;
-    color: white;
-  }
-  
-  .extreme{
-    border-radius: 6px;
-    background-color: violet;
-    padding: 5px;
-    color: white;
-  }
-  
-  .searchColumn{
-    height: 100vh;
-    background-color: lightslategrey;
-  }
+h1{
+  margin-top: -2rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h3, h4, h5{
+padding-top: 15px;
+font-weight: 500;
+}
+
+.jumbotron{
+  background-color: whitesmoke;
+  color: slategrey;
+  height: 4rem;
+  margin-bottom: 0px;
+}
+
+.btn{
+  background-color: turquoise;
+}
+
+.low{
+  border-radius: 6px;
+  background-color: green;
+  padding: 5px;
+  color: white;
+}
+
+.moderate{
+  border-radius: 6px;
+  background-color: yellow;
+  padding: 5px;
+  color: black;
+}
+
+.high{
+  border-radius: 6px;
+  background-color: orange;
+  padding: 5px;
+  color: black;
+}
+
+.vhigh{
+  border-radius: 6px;
+  background-color: red;
+  padding: 5px;
+  color: white;
+}
+
+.extreme{
+  border-radius: 6px;
+  background-color: violet;
+  padding: 5px;
+  color: white;
+}
+
+.searchColumn{
+  height: 100vh;
+  background-color: lightslategrey;
+}
