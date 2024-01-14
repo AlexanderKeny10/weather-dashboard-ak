@@ -56,7 +56,9 @@ function storeCurrentCity() {
 $("#citySearchBtn").on("click", function(event){
     event.preventDefault();
 
-    cityName = $("#cityInput").val().trim();
+    cityName = $("#cityInput")
+    .val()
+    .trim();
     if(cityName === ""){
         alert("Please enter a city to look up")
 
